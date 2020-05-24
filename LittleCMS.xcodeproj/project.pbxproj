@@ -1,0 +1,1220 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		546B296310AC5E600054D33A /* lcms2.h in Headers */ = {isa = PBXBuildFile; fileRef = 546B296110AC5E600054D33A /* lcms2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546B296410AC5E600054D33A /* lcms2_plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 546B296210AC5E600054D33A /* lcms2_plugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D07F2C40486CC7A007CD1D0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB77AAFE841565C02AAC07 /* Carbon.framework */; };
+		E11C037824783BB5008B4179 /* libtiff.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E17563B523CA54E100499348 /* libtiff.5.dylib */; };
+		E11C038F24786DDE008B4179 /* libtiff.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E17563B523CA54E100499348 /* libtiff.5.dylib */; };
+		E11C03932479862D008B4179 /* LittleCMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C03922479862D008B4179 /* LittleCMS.framework */; };
+		E11C03942479863F008B4179 /* LittleCMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C03922479862D008B4179 /* LittleCMS.framework */; };
+		E11C039524798649008B4179 /* LittleCMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C03922479862D008B4179 /* LittleCMS.framework */; };
+		E11C039624798652008B4179 /* LittleCMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11C03922479862D008B4179 /* LittleCMS.framework */; };
+		E17563C123CA63AA00499348 /* lcms2_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 546B29AC10AC682F0054D33A /* lcms2_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E17563D023CA675100499348 /* libtiff.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E17563B523CA54E100499348 /* libtiff.5.dylib */; };
+		E1D32715247AA637001D6667 /* cmspcs.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FA247AA634001D6667 /* cmspcs.c */; };
+		E1D32716247AA637001D6667 /* cmsplugin.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FB247AA634001D6667 /* cmsplugin.c */; };
+		E1D32717247AA637001D6667 /* cmsmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FC247AA634001D6667 /* cmsmd5.c */; };
+		E1D32718247AA637001D6667 /* cmshalf.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FD247AA634001D6667 /* cmshalf.c */; };
+		E1D32719247AA637001D6667 /* cmssamp.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FE247AA634001D6667 /* cmssamp.c */; };
+		E1D3271A247AA637001D6667 /* cmsvirt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D326FF247AA634001D6667 /* cmsvirt.c */; };
+		E1D3271B247AA637001D6667 /* cmstypes.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32700247AA635001D6667 /* cmstypes.c */; };
+		E1D3271C247AA637001D6667 /* cmsgamma.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32701247AA635001D6667 /* cmsgamma.c */; };
+		E1D3271D247AA637001D6667 /* cmserr.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32702247AA635001D6667 /* cmserr.c */; };
+		E1D3271E247AA637001D6667 /* cmscnvrt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32703247AA635001D6667 /* cmscnvrt.c */; };
+		E1D3271F247AA637001D6667 /* cmscam02.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32704247AA635001D6667 /* cmscam02.c */; };
+		E1D32720247AA637001D6667 /* cmspack.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32705247AA635001D6667 /* cmspack.c */; };
+		E1D32721247AA637001D6667 /* cmsalpha.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32706247AA635001D6667 /* cmsalpha.c */; };
+		E1D32722247AA637001D6667 /* cmsopt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32707247AA635001D6667 /* cmsopt.c */; };
+		E1D32723247AA637001D6667 /* cmssm.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32708247AA635001D6667 /* cmssm.c */; };
+		E1D32724247AA637001D6667 /* cmsnamed.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32709247AA635001D6667 /* cmsnamed.c */; };
+		E1D32725247AA637001D6667 /* cmsmtrx.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270A247AA635001D6667 /* cmsmtrx.c */; };
+		E1D32726247AA637001D6667 /* cmsps2.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270B247AA635001D6667 /* cmsps2.c */; };
+		E1D32727247AA637001D6667 /* cmslut.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270C247AA636001D6667 /* cmslut.c */; };
+		E1D32728247AA637001D6667 /* cmscgats.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270D247AA636001D6667 /* cmscgats.c */; };
+		E1D32729247AA637001D6667 /* cmsintrp.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270E247AA636001D6667 /* cmsintrp.c */; };
+		E1D3272A247AA637001D6667 /* cmsgmt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3270F247AA636001D6667 /* cmsgmt.c */; };
+		E1D3272B247AA637001D6667 /* cmsio1.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32710247AA636001D6667 /* cmsio1.c */; };
+		E1D3272C247AA637001D6667 /* LittleCMS_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E1D32711247AA636001D6667 /* LittleCMS_Prefix.pch */; };
+		E1D3272D247AA637001D6667 /* cmsxform.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32712247AA636001D6667 /* cmsxform.c */; };
+		E1D3272E247AA637001D6667 /* cmswtpnt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32713247AA636001D6667 /* cmswtpnt.c */; };
+		E1D3272F247AA637001D6667 /* cmsio0.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32714247AA636001D6667 /* cmsio0.c */; };
+		E1D3276B247AA9ED001D6667 /* tificc.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32767247AA73C001D6667 /* tificc.c */; };
+		E1D3276C247AA9F9001D6667 /* vprf.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32747247AA73C001D6667 /* vprf.c */; };
+		E1D3276D247AA9FD001D6667 /* xgetopt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32748247AA73C001D6667 /* xgetopt.c */; };
+		E1D3276E247AAA30001D6667 /* tifdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32766247AA73C001D6667 /* tifdiff.c */; };
+		E1D3276F247AAA37001D6667 /* vprf.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32747247AA73C001D6667 /* vprf.c */; };
+		E1D32770247AAA3B001D6667 /* xgetopt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32748247AA73C001D6667 /* xgetopt.c */; };
+		E1D32773247AAAB2001D6667 /* tiffassign.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32771247AAAB2001D6667 /* tiffassign.c */; };
+		E1D32774247AAB16001D6667 /* vprf.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32747247AA73C001D6667 /* vprf.c */; };
+		E1D32775247AAB18001D6667 /* xgetopt.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32748247AA73C001D6667 /* xgetopt.c */; };
+		E1D32776247AB0BB001D6667 /* testcms2.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D3273F247AA719001D6667 /* testcms2.c */; };
+		E1D32777247AB0BE001D6667 /* testplugin.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32741247AA719001D6667 /* testplugin.c */; };
+		E1D32778247AB0C3001D6667 /* zoo_icc.c in Sources */ = {isa = PBXBuildFile; fileRef = E1D32744247AA719001D6667 /* zoo_icc.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		CE509EFF1A31D4C500A1D3F6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		546B29A710AC67870054D33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = LittleCMS;
+		};
+		E11C037324783BB5008B4179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = LittleCMS;
+		};
+		E140DD4B23C911CA00AE6542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = LittleCMS;
+		};
+		E17563CB23CA675100499348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D07F2BC0486CC7A007CD1D0;
+			remoteInfo = LittleCMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE509F001A31DEDD00A1D3F6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11C037D24783BB5008B4179 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140DD5123C911CA00AE6542 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17563D523CA675100499348 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB77AAFE841565C02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		546B296110AC5E600054D33A /* lcms2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcms2.h; path = include/lcms2.h; sourceTree = SOURCE_ROOT; };
+		546B296210AC5E600054D33A /* lcms2_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcms2_plugin.h; path = include/lcms2_plugin.h; sourceTree = SOURCE_ROOT; };
+		546B29A310AC677E0054D33A /* testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testbed; sourceTree = BUILT_PRODUCTS_DIR; };
+		546B29AC10AC682F0054D33A /* lcms2_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcms2_internal.h; path = include/lcms2_internal.h; sourceTree = SOURCE_ROOT; };
+		8D07F2C80486CC7A007CD1D0 /* LittleCMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LittleCMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11C038124783BB5008B4179 /* tiffassign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tiffassign; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11C03922479862D008B4179 /* LittleCMS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LittleCMS.framework; path = ../../../../../../../Library/Frameworks/LittleCMS.framework; sourceTree = "<group>"; };
+		E140DD5C23C911CA00AE6542 /* tificc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tificc; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17563B523CA54E100499348 /* libtiff.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtiff.5.dylib; path = /opt/local/lib/libtiff.5.dylib; sourceTree = "<absolute>"; };
+		E17563D923CA675100499348 /* tifdiff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tifdiff; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D326FA247AA634001D6667 /* cmspcs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmspcs.c; path = src/cmspcs.c; sourceTree = "<group>"; };
+		E1D326FB247AA634001D6667 /* cmsplugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsplugin.c; path = src/cmsplugin.c; sourceTree = "<group>"; };
+		E1D326FC247AA634001D6667 /* cmsmd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsmd5.c; path = src/cmsmd5.c; sourceTree = "<group>"; };
+		E1D326FD247AA634001D6667 /* cmshalf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmshalf.c; path = src/cmshalf.c; sourceTree = "<group>"; };
+		E1D326FE247AA634001D6667 /* cmssamp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmssamp.c; path = src/cmssamp.c; sourceTree = "<group>"; };
+		E1D326FF247AA634001D6667 /* cmsvirt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsvirt.c; path = src/cmsvirt.c; sourceTree = "<group>"; };
+		E1D32700247AA635001D6667 /* cmstypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmstypes.c; path = src/cmstypes.c; sourceTree = "<group>"; };
+		E1D32701247AA635001D6667 /* cmsgamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsgamma.c; path = src/cmsgamma.c; sourceTree = "<group>"; };
+		E1D32702247AA635001D6667 /* cmserr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmserr.c; path = src/cmserr.c; sourceTree = "<group>"; };
+		E1D32703247AA635001D6667 /* cmscnvrt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmscnvrt.c; path = src/cmscnvrt.c; sourceTree = "<group>"; };
+		E1D32704247AA635001D6667 /* cmscam02.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmscam02.c; path = src/cmscam02.c; sourceTree = "<group>"; };
+		E1D32705247AA635001D6667 /* cmspack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmspack.c; path = src/cmspack.c; sourceTree = "<group>"; };
+		E1D32706247AA635001D6667 /* cmsalpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsalpha.c; path = src/cmsalpha.c; sourceTree = "<group>"; };
+		E1D32707247AA635001D6667 /* cmsopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsopt.c; path = src/cmsopt.c; sourceTree = "<group>"; };
+		E1D32708247AA635001D6667 /* cmssm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmssm.c; path = src/cmssm.c; sourceTree = "<group>"; };
+		E1D32709247AA635001D6667 /* cmsnamed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsnamed.c; path = src/cmsnamed.c; sourceTree = "<group>"; };
+		E1D3270A247AA635001D6667 /* cmsmtrx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsmtrx.c; path = src/cmsmtrx.c; sourceTree = "<group>"; };
+		E1D3270B247AA635001D6667 /* cmsps2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsps2.c; path = src/cmsps2.c; sourceTree = "<group>"; };
+		E1D3270C247AA636001D6667 /* cmslut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmslut.c; path = src/cmslut.c; sourceTree = "<group>"; };
+		E1D3270D247AA636001D6667 /* cmscgats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmscgats.c; path = src/cmscgats.c; sourceTree = "<group>"; };
+		E1D3270E247AA636001D6667 /* cmsintrp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsintrp.c; path = src/cmsintrp.c; sourceTree = "<group>"; };
+		E1D3270F247AA636001D6667 /* cmsgmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsgmt.c; path = src/cmsgmt.c; sourceTree = "<group>"; };
+		E1D32710247AA636001D6667 /* cmsio1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsio1.c; path = src/cmsio1.c; sourceTree = "<group>"; };
+		E1D32711247AA636001D6667 /* LittleCMS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LittleCMS_Prefix.pch; path = src/LittleCMS_Prefix.pch; sourceTree = "<group>"; };
+		E1D32712247AA636001D6667 /* cmsxform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsxform.c; path = src/cmsxform.c; sourceTree = "<group>"; };
+		E1D32713247AA636001D6667 /* cmswtpnt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmswtpnt.c; path = src/cmswtpnt.c; sourceTree = "<group>"; };
+		E1D32714247AA636001D6667 /* cmsio0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmsio0.c; path = src/cmsio0.c; sourceTree = "<group>"; };
+		E1D32731247AA668001D6667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D32732247AA668001D6667 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		E1D32733247AA668001D6667 /* TestBed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBed-Info.plist"; sourceTree = "<group>"; };
+		E1D32735247AA719001D6667 /* bad.icc */ = {isa = PBXFileReference; lastKnownFileType = text; path = bad.icc; sourceTree = "<group>"; };
+		E1D32736247AA719001D6667 /* bad_mpe.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = bad_mpe.icc; sourceTree = "<group>"; };
+		E1D32737247AA719001D6667 /* crayons.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = crayons.icc; sourceTree = "<group>"; };
+		E1D32738247AA719001D6667 /* ibm-t61.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ibm-t61.icc"; sourceTree = "<group>"; };
+		E1D32739247AA719001D6667 /* new.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = new.icc; sourceTree = "<group>"; };
+		E1D3273A247AA719001D6667 /* test1.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.icc; sourceTree = "<group>"; };
+		E1D3273B247AA719001D6667 /* test2.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = test2.icc; sourceTree = "<group>"; };
+		E1D3273C247AA719001D6667 /* test3.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = test3.icc; sourceTree = "<group>"; };
+		E1D3273D247AA719001D6667 /* test4.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = test4.icc; sourceTree = "<group>"; };
+		E1D3273E247AA719001D6667 /* test5.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = test5.icc; sourceTree = "<group>"; };
+		E1D3273F247AA719001D6667 /* testcms2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testcms2.c; sourceTree = "<group>"; };
+		E1D32740247AA719001D6667 /* testcms2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testcms2.h; sourceTree = "<group>"; };
+		E1D32741247AA719001D6667 /* testplugin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testplugin.c; sourceTree = "<group>"; };
+		E1D32742247AA719001D6667 /* testthread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testthread.cpp; sourceTree = "<group>"; };
+		E1D32743247AA719001D6667 /* toosmall.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = toosmall.icc; sourceTree = "<group>"; };
+		E1D32744247AA719001D6667 /* zoo_icc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zoo_icc.c; sourceTree = "<group>"; };
+		E1D32747247AA73C001D6667 /* vprf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vprf.c; sourceTree = "<group>"; };
+		E1D32748247AA73C001D6667 /* xgetopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xgetopt.c; sourceTree = "<group>"; };
+		E1D3274A247AA73C001D6667 /* delphidemo.dpr */ = {isa = PBXFileReference; lastKnownFileType = text; path = delphidemo.dpr; sourceTree = "<group>"; };
+		E1D3274B247AA73C001D6667 /* delphidemo.dproj */ = {isa = PBXFileReference; lastKnownFileType = text; path = delphidemo.dproj; sourceTree = "<group>"; };
+		E1D3274C247AA73C001D6667 /* delphidemo.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = delphidemo.res; sourceTree = "<group>"; };
+		E1D3274D247AA73C001D6667 /* demo1.dfm */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo1.dfm; sourceTree = "<group>"; };
+		E1D3274E247AA73C001D6667 /* demo1.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = demo1.pas; sourceTree = "<group>"; };
+		E1D3274F247AA73C001D6667 /* lcms2dll.pas */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = lcms2dll.pas; sourceTree = "<group>"; };
+		E1D32751247AA73C001D6667 /* iccjpeg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = iccjpeg.c; sourceTree = "<group>"; };
+		E1D32752247AA73C001D6667 /* iccjpeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iccjpeg.h; sourceTree = "<group>"; };
+		E1D32753247AA73C001D6667 /* jpgicc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jpgicc.c; sourceTree = "<group>"; };
+		E1D32755247AA73C001D6667 /* linkicc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkicc.c; sourceTree = "<group>"; };
+		E1D32757247AA73C001D6667 /* icctrans.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = icctrans.c; sourceTree = "<group>"; };
+		E1D32758247AA73C001D6667 /* lcms_rsp */ = {isa = PBXFileReference; lastKnownFileType = text; path = lcms_rsp; sourceTree = "<group>"; };
+		E1D3275A247AA73C001D6667 /* psicc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = psicc.c; sourceTree = "<group>"; };
+		E1D3275C247AA73C001D6667 /* itufax.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = itufax.c; sourceTree = "<group>"; };
+		E1D3275D247AA73C001D6667 /* mkcmy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkcmy.c; sourceTree = "<group>"; };
+		E1D3275E247AA73C001D6667 /* mkgrayer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkgrayer.c; sourceTree = "<group>"; };
+		E1D3275F247AA73C001D6667 /* mktiff8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mktiff8.c; sourceTree = "<group>"; };
+		E1D32760247AA73C001D6667 /* roundtrip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = roundtrip.c; sourceTree = "<group>"; };
+		E1D32761247AA73C001D6667 /* vericc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vericc.c; sourceTree = "<group>"; };
+		E1D32762247AA73C001D6667 /* wtpt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wtpt.c; sourceTree = "<group>"; };
+		E1D32766247AA73C001D6667 /* tifdiff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tifdiff.c; sourceTree = "<group>"; };
+		E1D32767247AA73C001D6667 /* tificc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tificc.c; sourceTree = "<group>"; };
+		E1D32769247AA73C001D6667 /* transicc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = transicc.c; sourceTree = "<group>"; };
+		E1D3276A247AA73C001D6667 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		E1D32771247AAAB2001D6667 /* tiffassign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tiffassign.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		546B29A110AC677E0054D33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11C03932479862D008B4179 /* LittleCMS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D07F2C30486CC7A007CD1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D07F2C40486CC7A007CD1D0 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11C037624783BB5008B4179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11C039624798652008B4179 /* LittleCMS.framework in Frameworks */,
+				E11C037824783BB5008B4179 /* libtiff.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140DD5023C911CA00AE6542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11C03942479863F008B4179 /* LittleCMS.framework in Frameworks */,
+				E11C038F24786DDE008B4179 /* libtiff.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17563CE23CA675100499348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11C039524798649008B4179 /* LittleCMS.framework in Frameworks */,
+				E17563D023CA675100499348 /* libtiff.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D07F2C80486CC7A007CD1D0 /* LittleCMS.framework */,
+				546B29A310AC677E0054D33A /* testbed */,
+				E140DD5C23C911CA00AE6542 /* tificc */,
+				E17563D923CA675100499348 /* tifdiff */,
+				E11C038124783BB5008B4179 /* tiffassign */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* LittleCMS */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ACFE841707C02AAC07 /* src */,
+				E17563AE23CA331800499348 /* include */,
+				E1D32734247AA719001D6667 /* testbed */,
+				E1D32745247AA73C001D6667 /* utils */,
+				E1D32730247AA668001D6667 /* resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+				E11C036B24782F9B008B4179 /* Frameworks */,
+			);
+			name = LittleCMS;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AAFE841565C02AAC07 /* Carbon.framework */,
+				E17563B523CA54E100499348 /* libtiff.5.dylib */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32706247AA635001D6667 /* cmsalpha.c */,
+				E1D32704247AA635001D6667 /* cmscam02.c */,
+				E1D3270D247AA636001D6667 /* cmscgats.c */,
+				E1D32703247AA635001D6667 /* cmscnvrt.c */,
+				E1D32702247AA635001D6667 /* cmserr.c */,
+				E1D32701247AA635001D6667 /* cmsgamma.c */,
+				E1D3270F247AA636001D6667 /* cmsgmt.c */,
+				E1D326FD247AA634001D6667 /* cmshalf.c */,
+				E1D3270E247AA636001D6667 /* cmsintrp.c */,
+				E1D32714247AA636001D6667 /* cmsio0.c */,
+				E1D32710247AA636001D6667 /* cmsio1.c */,
+				E1D3270C247AA636001D6667 /* cmslut.c */,
+				E1D326FC247AA634001D6667 /* cmsmd5.c */,
+				E1D3270A247AA635001D6667 /* cmsmtrx.c */,
+				E1D32709247AA635001D6667 /* cmsnamed.c */,
+				E1D32707247AA635001D6667 /* cmsopt.c */,
+				E1D32705247AA635001D6667 /* cmspack.c */,
+				E1D326FA247AA634001D6667 /* cmspcs.c */,
+				E1D326FB247AA634001D6667 /* cmsplugin.c */,
+				E1D3270B247AA635001D6667 /* cmsps2.c */,
+				E1D326FE247AA634001D6667 /* cmssamp.c */,
+				E1D32708247AA635001D6667 /* cmssm.c */,
+				E1D32700247AA635001D6667 /* cmstypes.c */,
+				E1D326FF247AA634001D6667 /* cmsvirt.c */,
+				E1D32713247AA636001D6667 /* cmswtpnt.c */,
+				E1D32712247AA636001D6667 /* cmsxform.c */,
+				E1D32711247AA636001D6667 /* LittleCMS_Prefix.pch */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		E11C036B24782F9B008B4179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11C03922479862D008B4179 /* LittleCMS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E17563AE23CA331800499348 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				546B296110AC5E600054D33A /* lcms2.h */,
+				546B296210AC5E600054D33A /* lcms2_plugin.h */,
+				546B29AC10AC682F0054D33A /* lcms2_internal.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E1D32730247AA668001D6667 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32731247AA668001D6667 /* Info.plist */,
+				E1D32732247AA668001D6667 /* InfoPlist.strings */,
+				E1D32733247AA668001D6667 /* TestBed-Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		E1D32734247AA719001D6667 /* testbed */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32735247AA719001D6667 /* bad.icc */,
+				E1D32736247AA719001D6667 /* bad_mpe.icc */,
+				E1D32737247AA719001D6667 /* crayons.icc */,
+				E1D32738247AA719001D6667 /* ibm-t61.icc */,
+				E1D32739247AA719001D6667 /* new.icc */,
+				E1D3273A247AA719001D6667 /* test1.icc */,
+				E1D3273B247AA719001D6667 /* test2.icc */,
+				E1D3273C247AA719001D6667 /* test3.icc */,
+				E1D3273D247AA719001D6667 /* test4.icc */,
+				E1D3273E247AA719001D6667 /* test5.icc */,
+				E1D32743247AA719001D6667 /* toosmall.icc */,
+				E1D32744247AA719001D6667 /* zoo_icc.c */,
+				E1D3273F247AA719001D6667 /* testcms2.c */,
+				E1D32740247AA719001D6667 /* testcms2.h */,
+				E1D32741247AA719001D6667 /* testplugin.c */,
+				E1D32742247AA719001D6667 /* testthread.cpp */,
+			);
+			path = testbed;
+			sourceTree = "<group>";
+		};
+		E1D32745247AA73C001D6667 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32746247AA73C001D6667 /* common */,
+				E1D32749247AA73C001D6667 /* delphi */,
+				E1D32750247AA73C001D6667 /* jpgicc */,
+				E1D32754247AA73C001D6667 /* linkicc */,
+				E1D32756247AA73C001D6667 /* matlab */,
+				E1D32759247AA73C001D6667 /* psicc */,
+				E1D3275B247AA73C001D6667 /* samples */,
+				E1D32763247AA73C001D6667 /* tifassign */,
+				E1D32765247AA73C001D6667 /* tificc */,
+				E1D32768247AA73C001D6667 /* transicc */,
+				E1D3276A247AA73C001D6667 /* utils.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		E1D32746247AA73C001D6667 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32747247AA73C001D6667 /* vprf.c */,
+				E1D32748247AA73C001D6667 /* xgetopt.c */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E1D32749247AA73C001D6667 /* delphi */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3274A247AA73C001D6667 /* delphidemo.dpr */,
+				E1D3274B247AA73C001D6667 /* delphidemo.dproj */,
+				E1D3274C247AA73C001D6667 /* delphidemo.res */,
+				E1D3274D247AA73C001D6667 /* demo1.dfm */,
+				E1D3274E247AA73C001D6667 /* demo1.pas */,
+				E1D3274F247AA73C001D6667 /* lcms2dll.pas */,
+			);
+			path = delphi;
+			sourceTree = "<group>";
+		};
+		E1D32750247AA73C001D6667 /* jpgicc */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32751247AA73C001D6667 /* iccjpeg.c */,
+				E1D32752247AA73C001D6667 /* iccjpeg.h */,
+				E1D32753247AA73C001D6667 /* jpgicc.c */,
+			);
+			path = jpgicc;
+			sourceTree = "<group>";
+		};
+		E1D32754247AA73C001D6667 /* linkicc */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32755247AA73C001D6667 /* linkicc.c */,
+			);
+			path = linkicc;
+			sourceTree = "<group>";
+		};
+		E1D32756247AA73C001D6667 /* matlab */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32757247AA73C001D6667 /* icctrans.c */,
+				E1D32758247AA73C001D6667 /* lcms_rsp */,
+			);
+			path = matlab;
+			sourceTree = "<group>";
+		};
+		E1D32759247AA73C001D6667 /* psicc */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3275A247AA73C001D6667 /* psicc.c */,
+			);
+			path = psicc;
+			sourceTree = "<group>";
+		};
+		E1D3275B247AA73C001D6667 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				E1D3275C247AA73C001D6667 /* itufax.c */,
+				E1D3275D247AA73C001D6667 /* mkcmy.c */,
+				E1D3275E247AA73C001D6667 /* mkgrayer.c */,
+				E1D3275F247AA73C001D6667 /* mktiff8.c */,
+				E1D32760247AA73C001D6667 /* roundtrip.c */,
+				E1D32761247AA73C001D6667 /* vericc.c */,
+				E1D32762247AA73C001D6667 /* wtpt.c */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
+		E1D32763247AA73C001D6667 /* tifassign */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32771247AAAB2001D6667 /* tiffassign.c */,
+			);
+			path = tifassign;
+			sourceTree = "<group>";
+		};
+		E1D32765247AA73C001D6667 /* tificc */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32766247AA73C001D6667 /* tifdiff.c */,
+				E1D32767247AA73C001D6667 /* tificc.c */,
+			);
+			path = tificc;
+			sourceTree = "<group>";
+		};
+		E1D32768247AA73C001D6667 /* transicc */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32769247AA73C001D6667 /* transicc.c */,
+			);
+			path = transicc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D07F2BD0486CC7A007CD1D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546B296310AC5E600054D33A /* lcms2.h in Headers */,
+				E17563C123CA63AA00499348 /* lcms2_internal.h in Headers */,
+				546B296410AC5E600054D33A /* lcms2_plugin.h in Headers */,
+				E1D3272C247AA637001D6667 /* LittleCMS_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11C037B24783BB5008B4179 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17563B023CA4DF200499348 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17563D323CA675100499348 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		546B29A210AC677E0054D33A /* testcms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546B29AB10AC67C30054D33A /* Build configuration list for PBXNativeTarget "testcms" */;
+			buildPhases = (
+				546B29A010AC677E0054D33A /* Sources */,
+				546B29A110AC677E0054D33A /* Frameworks */,
+				CE509F001A31DEDD00A1D3F6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				546B29A810AC67870054D33A /* PBXTargetDependency */,
+			);
+			name = testcms;
+			productName = testbed;
+			productReference = 546B29A310AC677E0054D33A /* testbed */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D07F2BC0486CC7A007CD1D0 /* LittleCMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LittleCMS" */;
+			buildPhases = (
+				8D07F2BD0486CC7A007CD1D0 /* Headers */,
+				8D07F2BF0486CC7A007CD1D0 /* Resources */,
+				8D07F2C10486CC7A007CD1D0 /* Sources */,
+				8D07F2C30486CC7A007CD1D0 /* Frameworks */,
+				8D07F2C50486CC7A007CD1D0 /* Rez */,
+			);
+			buildRules = (
+				CE509EFF1A31D4C500A1D3F6 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = LittleCMS;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = LittleCMS;
+			productReference = 8D07F2C80486CC7A007CD1D0 /* LittleCMS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E11C037124783BB5008B4179 /* tiffassign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11C037E24783BB5008B4179 /* Build configuration list for PBXNativeTarget "tiffassign" */;
+			buildPhases = (
+				E11C037424783BB5008B4179 /* Sources */,
+				E11C037624783BB5008B4179 /* Frameworks */,
+				E11C037B24783BB5008B4179 /* Headers */,
+				E11C037D24783BB5008B4179 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11C037224783BB5008B4179 /* PBXTargetDependency */,
+			);
+			name = tiffassign;
+			productName = testbed;
+			productReference = E11C038124783BB5008B4179 /* tiffassign */;
+			productType = "com.apple.product-type.tool";
+		};
+		E140DD4923C911CA00AE6542 /* tificc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E140DD5923C911CA00AE6542 /* Build configuration list for PBXNativeTarget "tificc" */;
+			buildPhases = (
+				E140DD4C23C911CA00AE6542 /* Sources */,
+				E140DD5023C911CA00AE6542 /* Frameworks */,
+				E17563B023CA4DF200499348 /* Headers */,
+				E140DD5123C911CA00AE6542 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E140DD4A23C911CA00AE6542 /* PBXTargetDependency */,
+			);
+			name = tificc;
+			productName = testbed;
+			productReference = E140DD5C23C911CA00AE6542 /* tificc */;
+			productType = "com.apple.product-type.tool";
+		};
+		E17563C923CA675100499348 /* tifdiff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17563D623CA675100499348 /* Build configuration list for PBXNativeTarget "tifdiff" */;
+			buildPhases = (
+				E17563CC23CA675100499348 /* Sources */,
+				E17563CE23CA675100499348 /* Frameworks */,
+				E17563D323CA675100499348 /* Headers */,
+				E17563D523CA675100499348 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17563CA23CA675100499348 /* PBXTargetDependency */,
+			);
+			name = tifdiff;
+			productName = testbed;
+			productReference = E17563D923CA675100499348 /* tifdiff */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = LittleCMS;
+			};
+			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LittleCMS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* LittleCMS */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D07F2BC0486CC7A007CD1D0 /* LittleCMS */,
+				546B29A210AC677E0054D33A /* testcms */,
+				E140DD4923C911CA00AE6542 /* tificc */,
+				E17563C923CA675100499348 /* tifdiff */,
+				E11C037124783BB5008B4179 /* tiffassign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D07F2BF0486CC7A007CD1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D07F2C50486CC7A007CD1D0 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		546B29A010AC677E0054D33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D32776247AB0BB001D6667 /* testcms2.c in Sources */,
+				E1D32777247AB0BE001D6667 /* testplugin.c in Sources */,
+				E1D32778247AB0C3001D6667 /* zoo_icc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D07F2C10486CC7A007CD1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D32721247AA637001D6667 /* cmsalpha.c in Sources */,
+				E1D32720247AA637001D6667 /* cmspack.c in Sources */,
+				E1D3272D247AA637001D6667 /* cmsxform.c in Sources */,
+				E1D3271F247AA637001D6667 /* cmscam02.c in Sources */,
+				E1D32724247AA637001D6667 /* cmsnamed.c in Sources */,
+				E1D3271A247AA637001D6667 /* cmsvirt.c in Sources */,
+				E1D3271C247AA637001D6667 /* cmsgamma.c in Sources */,
+				E1D32725247AA637001D6667 /* cmsmtrx.c in Sources */,
+				E1D32726247AA637001D6667 /* cmsps2.c in Sources */,
+				E1D3271D247AA637001D6667 /* cmserr.c in Sources */,
+				E1D32718247AA637001D6667 /* cmshalf.c in Sources */,
+				E1D32716247AA637001D6667 /* cmsplugin.c in Sources */,
+				E1D3272F247AA637001D6667 /* cmsio0.c in Sources */,
+				E1D3272E247AA637001D6667 /* cmswtpnt.c in Sources */,
+				E1D32719247AA637001D6667 /* cmssamp.c in Sources */,
+				E1D32728247AA637001D6667 /* cmscgats.c in Sources */,
+				E1D32727247AA637001D6667 /* cmslut.c in Sources */,
+				E1D32723247AA637001D6667 /* cmssm.c in Sources */,
+				E1D32722247AA637001D6667 /* cmsopt.c in Sources */,
+				E1D3271B247AA637001D6667 /* cmstypes.c in Sources */,
+				E1D3271E247AA637001D6667 /* cmscnvrt.c in Sources */,
+				E1D3272A247AA637001D6667 /* cmsgmt.c in Sources */,
+				E1D32717247AA637001D6667 /* cmsmd5.c in Sources */,
+				E1D32715247AA637001D6667 /* cmspcs.c in Sources */,
+				E1D3272B247AA637001D6667 /* cmsio1.c in Sources */,
+				E1D32729247AA637001D6667 /* cmsintrp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11C037424783BB5008B4179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D32773247AAAB2001D6667 /* tiffassign.c in Sources */,
+				E1D32774247AAB16001D6667 /* vprf.c in Sources */,
+				E1D32775247AAB18001D6667 /* xgetopt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140DD4C23C911CA00AE6542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D3276B247AA9ED001D6667 /* tificc.c in Sources */,
+				E1D3276C247AA9F9001D6667 /* vprf.c in Sources */,
+				E1D3276D247AA9FD001D6667 /* xgetopt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17563CC23CA675100499348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D3276E247AAA30001D6667 /* tifdiff.c in Sources */,
+				E1D3276F247AAA37001D6667 /* vprf.c in Sources */,
+				E1D32770247AAA3B001D6667 /* xgetopt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		546B29A810AC67870054D33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D07F2BC0486CC7A007CD1D0 /* LittleCMS */;
+			targetProxy = 546B29A710AC67870054D33A /* PBXContainerItemProxy */;
+		};
+		E11C037224783BB5008B4179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D07F2BC0486CC7A007CD1D0 /* LittleCMS */;
+			targetProxy = E11C037324783BB5008B4179 /* PBXContainerItemProxy */;
+		};
+		E140DD4A23C911CA00AE6542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D07F2BC0486CC7A007CD1D0 /* LittleCMS */;
+			targetProxy = E140DD4B23C911CA00AE6542 /* PBXContainerItemProxy */;
+		};
+		E17563CA23CA675100499348 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D07F2BC0486CC7A007CD1D0 /* LittleCMS */;
+			targetProxy = E17563CB23CA675100499348 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC24308B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/LittleCMS_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = /Library/Frameworks;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.carbonframeworktemplate;
+				PRODUCT_NAME = LittleCMS;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4FADC24408B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = src/LittleCMS_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_MODE_FLAG = "u+w,go-w,a+rX";
+				INSTALL_OWNER = teunis;
+				INSTALL_PATH = /Library/Frameworks;
+				LIBRARY_STYLE = DYNAMIC;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.carbonframeworktemplate;
+				PRODUCT_NAME = LittleCMS;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		4FADC24708B4156D00ABE55E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					"\"$PROJECT_DIR\"/include",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = "";
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+			};
+			name = Debug;
+		};
+		4FADC24808B4156D00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					"\"$PROJECT_DIR\"/include",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = "";
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+			};
+			name = Release;
+		};
+		546B29A510AC677F0054D33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_VERSION = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					LittleCMS,
+				);
+				PRODUCT_NAME = testbed;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		546B29A610AC677F0054D33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_VERSION = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+					"-framework",
+					LittleCMS,
+				);
+				PRODUCT_NAME = testbed;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E11C037F24783BB5008B4179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = "";
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_VERSION = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		E11C038024783BB5008B4179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				FRAMEWORK_VERSION = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E140DD5A23C911CA00AE6542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = "";
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = " $(LOCAL_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_VERSION = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		E140DD5B23C911CA00AE6542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = " $(LOCAL_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_VERSION = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E17563D723CA675100499348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = "";
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_VERSION = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = " /opt/local/include";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		E17563D823CA675100499348 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /dbg;
+				FRAMEWORK_SEARCH_PATHS = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_VERSION = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = " /opt/local/include";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = /bin;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LittleCMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24308B4156D00ABE55E /* Debug */,
+				4FADC24408B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LittleCMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC24708B4156D00ABE55E /* Debug */,
+				4FADC24808B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		546B29AB10AC67C30054D33A /* Build configuration list for PBXNativeTarget "testcms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546B29A510AC677F0054D33A /* Debug */,
+				546B29A610AC677F0054D33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E11C037E24783BB5008B4179 /* Build configuration list for PBXNativeTarget "tiffassign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11C037F24783BB5008B4179 /* Debug */,
+				E11C038024783BB5008B4179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E140DD5923C911CA00AE6542 /* Build configuration list for PBXNativeTarget "tificc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E140DD5A23C911CA00AE6542 /* Debug */,
+				E140DD5B23C911CA00AE6542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E17563D623CA675100499348 /* Build configuration list for PBXNativeTarget "tifdiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17563D723CA675100499348 /* Debug */,
+				E17563D823CA675100499348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
